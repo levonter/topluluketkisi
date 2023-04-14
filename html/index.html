@@ -1,0 +1,202 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topluluk Etkisi</title>
+
+<style>
+    .div {
+      display: flex;
+    }
+    @media (max-width: 999px) {
+      .div {
+        flex-direction: column;
+        align-items: stretch;
+      }
+    }
+    .column {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: calc(100% - 0px);
+      margin-left: 0px;
+    }
+    @media (max-width: 999px) {
+      .column {
+        width: 100%;
+      }
+    }
+    .image {
+      object-fit: contain;
+      object-position: top left;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+    .image-sizer {
+      width: 100%;
+      padding-top: 159.4%;
+      pointer-events: none;
+      font-size: 0;
+    }
+    </style>
+</head>
+<body>
+
+
+<div
+class="
+  relative
+  shrink-0
+  box-border
+  bg-[rgba(4,18,252,1)]
+  flex-col flex
+  h-auto
+  bg-[url(https://cdn.builder.io/api/v1/image/assets%2F2033fac92fe34a039812a0127c9f6f76%2Fd21c0980b04b45a49eff581ae0c45b15)]
+  bg-no-repeat bg-center bg-cover
+  mt-0
+  pb-[50px]
+"
+>
+<div
+  class="
+    relative
+    shrink-0
+    box-border
+    flex flex-col
+    items-stretch
+    mt-[100px]
+    px-[150px]
+    max-md:px-[100px]
+    max-sm:pl-[50px]
+  "
+>
+  <div class="builder-columns div">
+    <div class="builder-column column">
+      <div
+        class="
+          flex flex-col
+          relative
+          shrink-0
+          box-border
+          w-full
+          min-h-[20px] min-w-[20px]
+          overflow-hidden
+          max-w-[100px]
+          ml-0
+        "
+        data-el="div-1"
+      >
+        <picture>
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets%2F2033fac92fe34a039812a0127c9f6f76%2F38096b5007b84aec9283c992f361414e"
+            srcset="
+              https://cdn.builder.io/api/v1/image/assets%2F2033fac92fe34a039812a0127c9f6f76%2F38096b5007b84aec9283c992f361414e?width=100   100w,
+              https://cdn.builder.io/api/v1/image/assets%2F2033fac92fe34a039812a0127c9f6f76%2F38096b5007b84aec9283c992f361414e?width=200   200w,
+              https://cdn.builder.io/api/v1/image/assets%2F2033fac92fe34a039812a0127c9f6f76%2F38096b5007b84aec9283c992f361414e?width=400   400w,
+              https://cdn.builder.io/api/v1/image/assets%2F2033fac92fe34a039812a0127c9f6f76%2F38096b5007b84aec9283c992f361414e?width=800   800w,
+              https://cdn.builder.io/api/v1/image/assets%2F2033fac92fe34a039812a0127c9f6f76%2F38096b5007b84aec9283c992f361414e?width=1200 1200w,
+              https://cdn.builder.io/api/v1/image/assets%2F2033fac92fe34a039812a0127c9f6f76%2F38096b5007b84aec9283c992f361414e?width=1600 1600w,
+              https://cdn.builder.io/api/v1/image/assets%2F2033fac92fe34a039812a0127c9f6f76%2F38096b5007b84aec9283c992f361414e?width=2000 2000w,
+              https://cdn.builder.io/api/v1/image/assets%2F2033fac92fe34a039812a0127c9f6f76%2F38096b5007b84aec9283c992f361414e
+            "
+            class="image"
+          />
+        </picture>
+        <div class="builder-image-sizer image-sizer"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div
+  class="
+    flex flex-col
+    relative
+    shrink-0
+    box-border
+    items-stretch
+    my-[100px]
+    px-[150px]
+    max-md:px-[100px]
+    max-sm:px-[50px]
+  "
+>
+  <div class="builder-columns div">
+    <div class="builder-column column">
+      <div
+        class="
+          flex flex-col
+          relative
+          shrink-0
+          box-border
+          leading-[normal]
+          h-auto
+          text-[24px]
+          self-stretch
+          mt-[20px]
+          max-sm:w-[100%px]
+        "
+      >
+        <p>
+          Toplumsal ihtiyaçların doğru kaynaklar ve yöntemler ile kullanıcıya
+          ulaştırmayı hedef edinmiş, teknoloji ve iletişim yöntemlerini
+          geliştirerek kullanmak esası ile afet, iklim, tarım konularda
+          faaliyet gösteren bir sosyal girişimdir.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<script>
+(() => {
+  const state = {};
+
+  let context = null;
+  let nodesToDestroy = [];
+  let pendingUpdate = false;
+
+  function destroyAnyNodes() {
+    // destroy current view template refs before rendering again
+    nodesToDestroy.forEach((el) => el.remove());
+    nodesToDestroy = [];
+  }
+
+  // Function to update data bindings and loops
+  // call update() when you mutate state and need the updates to reflect
+  // in the dom
+  function update() {
+    if (pendingUpdate === true) {
+      return;
+    }
+    pendingUpdate = true;
+
+    document.querySelectorAll("[data-el='div-1']").forEach((el) => {
+      el.setAttribute("lockAspectRatio", false);
+
+      el.setAttribute("noWebp", true);
+    });
+
+    destroyAnyNodes();
+
+    pendingUpdate = false;
+  }
+
+  // Update with initial state on first load
+  update();
+})();
+</script>
+
+
+<builder-component model="page" api-key="2033fac92fe34a039812a0127c9f6f76"></builder-component>
+<script src="https://cdn.builder.io/js/webcomponents"></script>
+
+
+
+</body>
+</html>
+
